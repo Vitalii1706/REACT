@@ -1,9 +1,9 @@
-const rootElement = document.querySelector("#root");
+const rootElem = document.querySelector("#root");
 
-//
 const greetingElem = React.createElement(
   "div",
   { className: "greeting" },
   "Hello, React!"
 );
-ReactDOM.render(greetingElem, rootElement);
+
+ReactDOM.render(greetingElem, rootElem);
