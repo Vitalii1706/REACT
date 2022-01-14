@@ -16,6 +16,7 @@ ReactDOM.render(
     < Comment
     user={userInfo}
     text="Good job!!!"
+    author='Author: Anonimus'
     date={new Date('2022-01-14')}
      />, 
      rootElement
