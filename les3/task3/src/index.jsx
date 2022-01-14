@@ -9,6 +9,7 @@ const rootElement = document.querySelector('#root');
 
 const userInfo = {
     name: 'Tom',
+    author: 'Anonimus',
     avatarUrl: 'https://avatars1.githubusercontent.com/u10002'
 }
 
@@ -16,7 +17,6 @@ ReactDOM.render(
     < Comment
     user={userInfo}
     text="Good job!!!"
-    author='Author: Anonimus'
     date={new Date('2022-01-14')}
      />, 
      rootElement

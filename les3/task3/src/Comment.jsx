@@ -15,9 +15,6 @@ function Comment(props) {
       <div className="comment__date">
         {formatDate(props.date)}
         </div>
-      <div className="comment__autor">
-        {props.author}
-      </div>
     </div>
   );
 }

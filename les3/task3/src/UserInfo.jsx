@@ -11,6 +11,9 @@ const UserInfo = (props) => {
         <div className="user-info__name">
           {props.user.name}
           </div>
+        <div className="user-info__author">
+          {props.user.author}
+          </div>
       </div>
     );
 };
