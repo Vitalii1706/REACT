@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 const Greeting = props => {
     const age = Math.floor((new Date - props.birthDate)/31556952000);
     console.log(age);
