@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+}
+
+.profile {
+  margin: auto;
+  padding: 8px;
+  border: 3px solid rgb(94, 20, 20);
+  border-radius: 10px;
+  background-color: aquamarine;
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__birth {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
