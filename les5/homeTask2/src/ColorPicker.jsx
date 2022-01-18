@@ -20,7 +20,7 @@ class ColorPicker extends Component {
 
     onHoverAqua = () => {
         this.setState({
-            text:'Aqua',
+            text:'Auqa',
         });
     }
  
