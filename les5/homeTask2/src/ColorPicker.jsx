@@ -6,41 +6,51 @@ class ColorPicker extends Component {
         this.state = {
             text: '',
         }
-    }
-    
+    }    
     onHoverCoral = () => {
         this.setState({
-            text:'Coral',
+            text: 'Coral',
         });
     };
-
     onHoverAqua = () => {
         this.setState({
-            text:'Aqua',
+            text: 'Aqua',
         });
     };
- 
     onHoverBisque = () => {
         this.setState({
-            text:'Bisque',
+            text: 'Bisque',
         });
     };
-
     reset() {
         this.setState({
-            text:'',
+            text: '',
         });
-    };
-
+    }
       
     render() {
         return (
         <div>
-            <div   class="picker__title">{this.state.text}</div>
+            <div className="picker__title">{this.state.text}</div>
             <div>
-              <button onMouseEnter={this.onHoverCoral} onMouseLeave={() => {this.reset(); }} class="picker__button picker__button_coral"></button>
-              <button onMouseEnter={this.onHoverAqua} onMouseLeave={() => {this.reset(); }} class="picker__button picker__button_aqua"></button>
-              <button onMouseEnter={this.onHoverBisque} onMouseLeave={() => {this.reset(); }} class="picker__button picker__button_bisque"></button>
+              <button 
+              onMouseEnter={this.onHoverCoral}
+              onMouseLeave={() => {
+                  this.reset(); 
+              }} 
+              className="picker__button picker__button_coral"></button>
+              <button 
+              onMouseEnter={this.onHoverAqua}
+              onMouseLeave={() => {
+                  this.reset(); 
+              }} 
+              className="picker__button picker__button_aqua"></button>
+              <button
+              onMouseEnter={this.onHoverBisque}
+              onMouseLeave={() => {
+                  this.reset();
+              }} 
+              className="picker__button picker__button_bisque"></button>
             </div>
         </div>
           
