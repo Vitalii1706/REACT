@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class ColorPicker extends Component {
-
     constructor() {
         super();
         this.state = {
@@ -13,25 +12,25 @@ class ColorPicker extends Component {
         this.setState({
             text:'Coral',
         });
-    }
+    };
 
     onHoverAqua = () => {
         this.setState({
             text:'Aqua',
         });
-    }
+    };
  
     onHoverBisque = () => {
         this.setState({
             text:'Bisque',
         });
-    }
+    };
 
     reset() {
         this.setState({
             text:'',
         });
-    }
+    };
 
       
     render() {
