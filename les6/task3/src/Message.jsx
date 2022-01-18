@@ -6,7 +6,7 @@ const Massage = ({ text }) => {
     }
     return (
         <div className='message'>
-            { text }
+            {text}
         </div>
     );
 };
