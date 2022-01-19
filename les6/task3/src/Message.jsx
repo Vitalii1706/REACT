@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Massage = ({ text }) => {
+const Message = ({ text }) => {
     if(!text) {
         return null;
     }
@@ -11,4 +11,4 @@ const Massage = ({ text }) => {
     );
 };
 
-export default Massage;
+export default Message;
