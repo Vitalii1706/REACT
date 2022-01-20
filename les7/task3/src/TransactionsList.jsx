@@ -1,7 +1,7 @@
 import React from 'react';
 import Transaction from './Transaction.jsx';
 
-const TransactionList = ({ transactions }) => (
+const TransactionsList = ({ transactions }) => (
   <ul className="transactions">
     {transactions.map(transaction => (
       <Transaction key={transaction.id} {...transaction} />
@@ -9,4 +9,4 @@ const TransactionList = ({ transactions }) => (
   </ul>
 );
 
-export default TransactionList;
+export default TransactionsList;
