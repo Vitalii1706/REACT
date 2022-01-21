@@ -18,6 +18,7 @@ class Dimensions extends Component {
 
   onResize = e => {
     const { innerWidth, innerHeight } = e.target;
+    // eslint-disable-next-line no-undef
     this.setDimensions(innerWidth, innerHeight);
   };
 
@@ -30,7 +31,7 @@ class Dimensions extends Component {
   };
 
   render() {
-    return <div className="dimensions">{`${this.state.width}px - ${this.state.height}px `}</div>;
+    return <div className="dimensions">{`${this.state.width}px - ${this.state.height}px`}</div>;
   }
 }
 
