@@ -7,7 +7,7 @@ class Life extends Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount: Api calls, subscriptions');
+    console.log('componentDidMount: API calls, subscriptions');
   }
 
   shouldComponentUpdate(nextProps) {
@@ -20,7 +20,7 @@ class Life extends Component {
   }
 
   componentWillUnmount() {
-    console.log('componentWillUnmount(): cleanup before DOM related component will be removed');
+    console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
   }
 
   render() {
