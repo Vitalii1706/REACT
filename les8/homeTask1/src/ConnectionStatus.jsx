@@ -23,8 +23,8 @@ class ConnectionStatus extends Component {
   }
 
   componentWillUnmount() {
-    window.addEventListener('online', this.isOnline);
-    window.addEventListener('offline', this.isOffline);
+    window.removeEventListener('online', this.isOnline);
+    window.removeEventListener('offline', this.isOffline);
   }
 
   render() {
