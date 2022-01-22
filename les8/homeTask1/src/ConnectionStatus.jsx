@@ -11,7 +11,7 @@ class ConnectionStatus extends Component {
     });
   };
 
-  isOnffline = () => {
+  isOffline = () => {
     this.setState({
       status: 'offline',
     });
