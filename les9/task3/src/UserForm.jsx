@@ -8,7 +8,7 @@ class UserForm extends Component {
       {},
     );
 
-    cthis.props.onSubmit(formData);
+    this.props.onSubmit(formData);
   };
 
   setRef = node => {
