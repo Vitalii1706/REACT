@@ -5,7 +5,7 @@ class UserProfile extends Component {
     if (!this.props.userData) {
       return null;
     }
-    const { avatar_url, location, name } = this.props.userData;
+    const { name, location, avatar_url } = this.props.userData;
 
     return (
       <div className="user">
