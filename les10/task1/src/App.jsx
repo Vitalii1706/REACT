@@ -12,7 +12,8 @@ class App extends Component {
   }
 
   fetchUserData = userId => {
-    fetch(`https:/api.github.com/users/${userId}`)
+    const userUrl = `https:/api.github.com/users/${userId}`;
+    fetch(userUrl)
       .then(response => response.json())
       .then(userData =>
         this.setState({
