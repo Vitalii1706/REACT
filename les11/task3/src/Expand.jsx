@@ -19,7 +19,7 @@ class Expand extends Component {
             {this.state.isOpen ? (
               <i className="fas fa-chevron-up" />
             ) : (
-              <i className="fas fa-chevron-up" />
+              <i className="fas fa-chevron-down" />
             )}
           </button>
         </div>
