@@ -13,32 +13,39 @@ class Auth extends React.Component {
   // in: obj
   // ot: undef
   state = {
-    isLoggedIn: false,
-    isLoading: false,
+    isLogin: true,
+    isSpinner: false,
   };
 
-  handleLoginClick = () => {
-    this.setState({ isLoading: true });
+  handleLogin = () => {
+    this.setState({ isLogin: false });
+  };
+
+  handleLogout = () => {
+    this.setState({ isLogin: true });
+    this.showSpinner();
+  };
+
+  showSpinner = () => {
+    this.setState({ isSpinner: true });
     setTimeout(() => {
       this.setState({
-        isLoading: false,
-        isLoggedIn: true,
+        isSpinner: false,
       });
-    }, 2000);
+    }, 500);
   };
 
   render() {
     console.log('RENDER');
-    const { isLoggedIn, isLoading } = this.state;
-    if (isLoading && !isLoggedIn) {
-      return <Spinner />;
+    let button;
+
+    if (this.state.isLogin) {
+      button = <Login onLogin={this.handleLogin} />;
+    } else {
+      button = <Logout onLogout={this.handleLogout} />;
     }
 
-    if (isLoggedIn) {
-      return <Logout />;
-    }
-
-    return <Login onLogin={this.handleLoginClick} />;
+    return <> {this.state.isSpinner ? <Spinner /> : button}</>;
   }
 }
 
