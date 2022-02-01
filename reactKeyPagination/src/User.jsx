@@ -1,8 +1,5 @@
 import React from 'react';
 
-// in:str, age
-// ou: jsx
-
 const User = ({ name, age }) => (
   <li className="user">
     <span className="user__name">{name}</span>
