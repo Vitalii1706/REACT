@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Pagination = ({ goPrev, goNext, currentPage, totalItems, itemPerPage }) => {
-  console.log({ goPrev, goNext, currentPage, totalItems, itemPerPage });
+const Pagination = ({ goPrev, goNext, currentPage, totalItems, itemsPerPage }) => {
+  console.log({ goPrev, goNext, currentPage, totalItems, itemsPerPage });
   const isPrevPageAvailable = currentPage > 1;
-  const isNextPageAvailable = totalItems / itemPerPage > currentPage;
+  const isNextPageAvailable = totalItems / itemsPerPage > currentPage;
 
   return (
     <div className="pagination">
